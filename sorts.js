@@ -26,17 +26,17 @@ let merge = (left, right) => {
 
 
 let quicksort = (arr) => {
-    if (arr.length < 2)
+    if (arr.length === 0)
         return arr;
     let less_than_pivot = [],
     greater_than_pivot = [];
     let pivot = arr[arr.length - 1];
 
-    for (let idx = 1; idx < arr.length; idx++) {
+    for (let idx = 0; idx < arr.length-1; idx++) {
         if (pivot > arr[idx]) {
-           less_than_pivot.push(arr[i]);
+           less_than_pivot.push(arr[idx]);
         } else {
-           greater_than_pivot.push(arr[i]);
+           greater_than_pivot.push(arr[idx]);
         }
     }
 
